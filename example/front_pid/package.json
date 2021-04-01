@@ -1,5 +1,5 @@
 {
-  "name": "front_pid",
+  "name": "@ex/front_pid",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
