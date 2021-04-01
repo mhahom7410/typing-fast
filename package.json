@@ -1,0 +1,10 @@
+{
+  "name": "typing-fast",
+  "version": "1.0.0",
+  "description": "n/a",
+  "main": "index.js",
+  "repository": "git@github.com:wornut/typing-fast.git",
+  "author": "worasitipon <worasitipon.t@hotmail.com>",
+  "license": "MIT",
+  "private": true
+}
