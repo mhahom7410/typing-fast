@@ -1,0 +1,11 @@
+{
+  "preset": "ts-jest",
+  "testMatch": ["**/*.spec.+(ts)"],
+  "globals": {
+    "ts-jest": {
+      "diagnostics": false,
+      "isolatedModules": false,
+      "tsconfig": "tsconfig.only-spec.json"
+    }
+  }
+}
