@@ -13,7 +13,7 @@
   - `application/json`
   - `multipart/form-data`
 - มี feature
-  - เมื่อมีการระบุ `f__k_you_give_me_number` ใน query string มาใน response จะมีการแสดงผลลัพธ์ที่ถูกต้องกลับไปด้วย
+  - เมื่อมีการระบุ `f__k_you_give_me_number` ใน query string มาใน request query จะมีการแสดงผลลัพธ์ที่ถูกต้องกลับไปด้วย
 - response
   - เป็น content-type application/json เท่านั้น
   - รองรับ
