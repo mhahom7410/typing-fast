@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+// font
+* {
+  font-family: 'Prompt', sans-serif;
+}
+
+
+//Header
+.header-top {
+  margin-top: 10%;
+  padding: 25px 25px 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #71C2EF;
+}
+
+.text-head {
+  text-align: center;
+}
+
+//body
+.body-box {
+  padding: 20px 20px 20px;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F9F9F9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+//input
+.form-group {
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+//button
+.btn .btn-primary {
+  padding: 10px 5px 10px;
+}
+.btn {
+  margin-left: 45%;
+}

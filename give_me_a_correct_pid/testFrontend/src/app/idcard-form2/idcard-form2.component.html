@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="col-md-12 header-top">
+    <H5 class="text-head">แบบทดสอบ FrontendIDcard</H5>
+  </div>
+  <div class="body-box">
+    <form [formGroup]="IDcardForm" (ngSubmit)="submittedIDcard()">
+      <div class="form-group">
+        <label for="InputIDcard">เลขบัตรปรชาชน</label>
+        <input type="text" class="form-control" value="{{qurreyparam.c_IDcard}}" placeholder="{{qurreyparam.c_IDcard}}"
+          id="InputIDcard" placeholder="กรุณากรอกเลขบัตรประชาชน" formControlName="IDcard" type="text" maxlength="13"
+          [ngClass]="{ 'is-invalid': submitted && f.IDcard.errors }">
+        <div *ngIf="submitted && f.IDcard.errors" class="invalid-feedback">
+          <div *ngIf="f.IDcard.errors.required">กรุณากรอกเลขบัตรประชาชน</div>
+          <div *ngIf="f.IDcard.errors.pattern">กรุณากรอกเฉพาะตัวเลข</div>
+          <div *ngIf="f.IDcard.errors.minLength">กรุณากรอกเลขบัตรประชาชนให้ครบ</div>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="check-api">
+          <label class="form-check-label" for="check-api">เรียกใช้ feature f__k_you_give_me_number</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary ">ยืนยัน</button>
+    </form>
+  </div>
+</div>
