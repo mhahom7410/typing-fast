@@ -6,7 +6,7 @@
     <form [formGroup]="IDcardForm" (ngSubmit)="submittedIDcard()">
       <div class="form-group">
         <label for="InputIDcard">เลขบัตรปรชาชน</label>
-        <input type="text" class="form-control" value="{{qurreyparam.c_IDcard}}" placeholder="{{qurreyparam.c_IDcard}}"
+        <input type="text" class="form-control" value="{{IDcardData.c_IDcard}}" placeholder="{{IDcardData.c_IDcard}}"
           id="InputIDcard" placeholder="กรุณากรอกเลขบัตรประชาชน" formControlName="IDcard" type="text" maxlength="13"
           [ngClass]="{ 'is-invalid': submitted && f.IDcard.errors }">
         <div *ngIf="submitted && f.IDcard.errors" class="invalid-feedback">
@@ -19,7 +19,7 @@
           <label class="form-check-label" for="check-api">เรียกใช้ feature f__k_you_give_me_number</label>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary ">ยืนยัน</button>
+      <button type="submit" class="btn btn-primary " >ยืนยัน</button>
     </form>
   </div>
 </div>

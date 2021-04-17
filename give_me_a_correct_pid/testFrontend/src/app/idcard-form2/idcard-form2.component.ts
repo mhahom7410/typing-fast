@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
 export class IdcardForm2Component implements OnInit {
   IDcardForm!: FormGroup;
   submitted = false;
-  qurreyparam: any;
+  IDcardData: any;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -32,8 +32,8 @@ export class IdcardForm2Component implements OnInit {
 
   ngOnInit(): void {
     this.activerouter.queryParams.subscribe((param) => {
-      this.qurreyparam = JSON.parse(param['IDcard']);
-      console.log(this.qurreyparam);
+      this.IDcardData = JSON.parse(param['IDcard']);
+      console.log(this.IDcardData);
     });
   }
 

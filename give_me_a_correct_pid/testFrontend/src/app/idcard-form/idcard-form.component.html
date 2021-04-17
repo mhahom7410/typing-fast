@@ -7,8 +7,7 @@
       <div class="form-group">
         <label for="InputIDcard">เลขบัตรปรชาชน</label>
         <input type="text" class="form-control" id="InputIDcard" placeholder="กรุณากรอกเลขบัตรประชาชน"
-          formControlName="IDcard" type="text" maxlength="13"
-          [ngClass]="{ 'is-invalid': submitted && f.IDcard.errors }">
+          formControlName="IDcard" maxlength="13" [ngClass]="{ 'is-invalid': submitted && f.IDcard.errors }">
         <div *ngIf="submitted && f.IDcard.errors" class="invalid-feedback">
           <div *ngIf="f.IDcard.errors.required">กรุณากรอกเลขบัตรประชาชน</div>
           <div *ngIf="f.IDcard.errors.pattern">กรุณากรอกเฉพาะตัวเลข</div>
